@@ -5,7 +5,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const configuredBaseUrl = (
     env.VITE_API_BASE_URL ??
-    'https://5042-2a05-45c2-30a5-c600-b76a-a772-5673-9a9.ngrok-free.app'
+    'https://9ba6-2a05-45c2-5096-8d00-25bd-cfec-69a1-d861.ngrok-free.app'
   ).trim();
   const proxyTarget = (env.VITE_API_PROXY_TARGET ?? configuredBaseUrl).trim();
   const useApiProxy = env.VITE_API_USE_PROXY !== 'false' && proxyTarget.length > 0;
